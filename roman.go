@@ -86,7 +86,7 @@ func (r *Roman) ToRoman(n int) string {
 
 func highestDecimal(n int) int {
 	for _, v := range maxTable {
-		if v < n {
+		if v <= n {
 			return v
 		}
 	}
